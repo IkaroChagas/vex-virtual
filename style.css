@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+body {
+    background-image: url(/images/tbm940.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0, 0.75);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    height: 183px;
+    width: 100%;
+    background-color: rgba(1, 1, 27, 0.7);
+}
+
+.logo img {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    color: grey;
+    width: 250px;
+    height: 130px;
+    
+}
+
+.nav-area {
+    display: flex;
+    color: gray;
+    text-align: center;
+    margin: auto;
+    justify-content: space-between;
+    background-color: rgba(3,3,76,0.0);
+    
+}
+
+#menu-opener img {
+    display: none;
+}
+
+
+.nav-area a {
+    display: flex;
+    background-color: rgba(3,3,76, 0.0);
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.nav-area a:hover{
+    display: flex;
+    border-bottom: 4px solid gray;
+    transition: 0.5s;
+}
+
+.box-1  {
+    display: block;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    height:300px;
+    width: 400px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 40px;
+    line-height: 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-1 h2 {
+    text-align: center;
+    padding: 4px;
+}
+
+.box-1 p {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.box-1:hover{
+    border: 2px solid gray;
+} 
+
+.box-2  {
+    display: block;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    height:200px;
+    width: 400px;
+    padding: 30px,30px;
+    margin: 40px;
+    line-height: 35px;
+    border-radius: 20px;
+}
+
+.box-2 h2 {
+    text-align: center;
+    padding: 4px;
+}
+
+.box-2 ul {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    list-style: none;
+}
+
+.box-2:hover{
+    border: 2px solid gray;
+} 
+
+.slides {
+ display: block;
+ width: 650px;
+ overflow: hidden;
+ height: 400px;
+ position: absolute;
+ top: 30%;
+ bottom: 15%;
+ transform: translate(90%, 25%);
+}
+
+.slide {
+    display: block;
+    position: relative;
+    transition: .6s;
+}
+
+.container-slide {
+    display: flex;
+    overflow: hidden;
+    width: 650px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.slide img {
+    display: flex;
+    width: 650px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.bar {
+    display: block;
+    position: relative;
+    width: 15px;
+    bottom: 140px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+input {
+  display: none;
+}
+
+#slide1:checked ~ .first {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .first {
+    margin-left: -100%;
+} 
+
+#slide3:checked ~ .first { 
+    margin-left: -200%;
+} 
+
+
+footer {
+    display: flex;
+    width: 100vw;
+}
+
+.box-3 {
+    background: rgba(41, 41, 41, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: 150px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.manufacturers-img {
+    display: flex;
+    margin: 40px;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.manufacturers-img img {
+    height: 50px;
+    width: 200px;
+    padding-right: 35px;
+}
+
+.social-media h2 {
+    display: flex;
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+ .social-media-logos a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    margin-left: 55px;
+}
+
+.text-area h2 {
+    display: flex;
+    font-size: 13px;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+@media (min-width:320px) and (max-width:896px) {
+    
+    * {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .logo {
+        margin: auto;
+        height: 20px;
+    }
+    
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    body {
+        display: block;
+        overflow-x: hidden; 
+        background-repeat: initial;
+        width: 100%; 
+        top: 80%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        margin-bottom: 4em;
+    }
+
+    aside {
+        position:fixed;
+        top:0;
+        right:0;
+        z-index:10;
+        display:flex;
+    }
+    #menu-opener {
+        width:55px;
+        height:60px;
+        cursor:pointer;
+        margin-top:10px;
+        margin-right:10px;
+    }
+
+    #menu-opener img {
+        width:55px;
+        height:60px;
+        cursor:pointer;
+    }
+    
+    .nav-area {
+        width:200px;
+        height:60vh;
+        background-color: rgba(1, 1, 27, 0.9);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        overflow-x:hidden;
+        overflow-y:auto;
+        transform: translate(-30%, 0%);
+        flex-direction: column;
+        transition: all ease .5s;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    
+    .nav-area a {
+        display:block;
+        color:gray;
+        cursor:pointer;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .nav-area a:hover {
+        background-color: rgba(39, 39, 39, 0.9);
+    }
+
+    aside {
+        position:fixed;
+        top:3px;
+        right:0;
+        z-index: 10;
+        display:flex;
+    }
+    #menu-opener {
+        width: 55px;
+        height:60px;
+        cursor:pointer;
+        margin-top:10px;
+        margin-right:10px;
+    }
+
+    #menu-opener img {
+        display: flex;
+        margin: 15px;
+        height: 60px;
+        width: 55px;
+        cursor: pointer;
+    }
+
+    .box-1 {
+        height: 200px;
+        width: 350px;
+        margin-top: 40px;
+        transform: translate(-1.0%, 30%);
+    } 
+
+    .box-1 h2 {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .box-1 p {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .box-1:hover {
+        border: 1px solid gray;
+    } 
+
+    .box-2 {
+        height: 200px;
+        width: 350px;
+        transform: translate(-2.0%, 45%);
+    }
+
+    .box-2 h2 {
+        display: block;
+        font-size: 20px;
+    }
+    
+    .box-2 ul {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        line-height: 35px;
+    }
+    
+    .box-2:hover {
+        border: 1px solid gray;
+    } 
+
+    .slides {
+        display: block;
+        max-width: 860px;
+        overflow: hidden;
+        height: 200px;
+        position: absolute;
+        top: 40rem;
+        margin: auto;
+        z-index: 10;
+        transform: translate(5.5%, 90%);
+    }
+
+    .slide {
+        display: flex;
+        position: relative;
+        transition: .6s;
+    }
+    
+    .container-slide {
+        display: flex;
+        overflow: hidden;
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .slide img {
+        display: flex;
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+    
+    .bar {
+        display: none;
+    }
+       
+    footer {
+        overflow-x: hidden; 
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 1rem;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        transform: translate(0.0%, 275%);
+
+    }
+    
+    .box-3 {
+        background: rgba(41, 41, 41, 0.8);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .box-3 h2 {
+        display: none;
+    }
+    
+
+    .text-area h2 {
+        display: flex;
+        font-size: 12px;
+        margin: 70px;
+        margin-left: 5px;
+    }
+    
+    .manufacturers-img {
+        display: flex;
+        width: 100px;
+        margin: 100px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    
+    .manufacturers-img img {
+        flex: 1;
+        height: 50px;
+        width: 170px;
+        margin: 10px 0 0 0;
+        align-items: center;
+    }
+    
+    .social-media h2 {
+        display: none;
+    }
+
+     .social-media-logos a img {
+        display: none;
+    }
+
+}
