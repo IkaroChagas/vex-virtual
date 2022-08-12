@@ -1,10 +1,12 @@
 function OnOff() {
    
-    if (document.querySelector(".nav-area").style.width === '200px') {
-        document.querySelector(".nav-area").style.width ='0px';
+    let Navtoggle = document.querySelector('.nav-area');
+    
+    if (Navtoggle.style.width === '200px') {
+        Navtoggle.style.width = '0px';
     } 
      else {
-        document.querySelector(".nav-area").style.width = '200px';
+        Navtoggle.style.width = '200px';
     } 
 }
 
