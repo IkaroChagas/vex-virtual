@@ -1,14 +1,22 @@
 function OnOff() {
+    let NavToggleOn = document.querySelector('.nav-area')
+    if (NavToggleOn.style.display === 'none'){
+        NavToggleOn.style.display = 'block';
+    } else {
+        NavToggleOn.style.display = 'none';
+    }
+
+   if(NavToggleOn.style.display === 'block') {
+       setTimeout(function() {
+            NavToggleOn.style.opacity = 1;
+        }, 400);
+    } else {
+        setTimeout(function() {
+            NavToggleOn.style.display === 'none';
+            NavToggleOn.style.opacity = 0;
+    }, 400);
    
-    let Navtoggle = document.querySelector('.nav-area');
-    
-    if (Navtoggle.style.width === '200px') {
-        Navtoggle.style.width = '0px';
-    } 
-     else {
-        Navtoggle.style.width = '200px';
-    } 
-}
+}}
 
 let count = 1
 
@@ -26,5 +34,3 @@ function nextImage() {
 
     document.getElementById('slide'+count).checked = true;
 }
-
-
