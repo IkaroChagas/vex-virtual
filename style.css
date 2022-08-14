@@ -348,15 +348,15 @@ footer {
     }
 
     .box-1 h2 {
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
         margin-top: -10px;
     }
 
     .box-1 p {
         text-align: center;
-        font-size: 10px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .box-2 {
@@ -368,14 +368,14 @@ footer {
     }
 
     .box-2 h2 {
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 20px;
     }
 
     .box-2 ul {
         text-align: center;
-        font-size: 10px;
-        line-height: 30px;
+        font-size: 12px;
+        line-height: 25px;
     }
 
     .slides {
