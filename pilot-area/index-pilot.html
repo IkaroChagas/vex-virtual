@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-pilot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+<header>
+    <h1>Selecione sua base</h1>
+</header>
+
+<main>
+    <div class="container-briefing">
+        <select name="FBO Itens" size="4" multiple="multiple">
+            <option value="belohorizonteTown">Pampulha-(SBBH)</option>
+            <option value="curitibaTown">Bacacheri-(SBBI)</option>
+            <option value="macapaTown">Macapá-(SBMQ)</option>
+        </select>
+        <br>
+        <h2>FBO Briefing (Fixed Base Operator)</h2>
+        <br>
+        <div class="fbo-items">
+        <select name="FBO Itens" size="4" multiple="multiple">
+            <option value="fuel-service">Abastecimento</option>
+            <option value="runway-lights">Balizamento da pista</option>
+            <option value="ground-power">GPU</option>
+            <option value="ATC-service">ATC no aerodromo</option>
+        </select>
+        </div>
+        <br><br>
+        <div class="input">
+       <p>Outro? Especifique:</p> <input type="text">
+        </div>
+        <div class="sendInfo">
+            <h3>Clique abaixo para enviar os dados para o despacho operacional</h3>
+            <button>Enviar</button>
+        </div>
+        <div class="info">
+            <p>Atenção: para selecionar mais de um item segure a tecla CTRL</p>
+        </div>
+
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script-pilot.js"></script>
+</body>

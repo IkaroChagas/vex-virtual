@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-image: url('/images/fbo.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(1, 1, 27, .90);
+    color: gray;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    margin: auto;
+}
+
+.container-briefing select {
+    display: block;
+    height: 120px;
+    width: 260px;
+    margin: auto;
+    font-size: 22px;
+    color: gray;
+    background-color: rgba(1, 1, 27, .50);
+    border-radius: 10px;
+    border: none;
+    scroll-margin-right: 0;
+}
+
+.input p {
+    display: flex;
+    height: 30px;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    margin: auto;
+    color: red;
+    font-weight: bold;
+}
