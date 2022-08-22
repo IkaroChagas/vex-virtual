@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -18,20 +19,25 @@
     </header>
 
 <main>
-        <form action="submit" value="subs">
+        <form action="/">
         <div class="inputForm">
-        <input id='placeholder-text' class="inputName" type="text"  placeholder="Digite seu nome completo">
-        <input id='placeholder-text' class="inputAge" type="text"  placeholder="Digite sua idade">
-        <input id='placeholder-text' class="inputCity" type="text"  placeholder="Digite sua cidade">
-        <input id='placeholder-text' class="inputCode" type="text"  placeholder="Digite seu código IVAO ou VATSIM">
-        <input id='placeholder-text' class="inputEmail" type="email"  placeholder="Digite seu melhor e-mail">
+        <input id="name" id='placeholder-text' class="inputName" type="text"  placeholder="Digite seu nome completo">
+        <input id="age"  id='placeholder-text' class="inputAge" type="text"  placeholder="Digite sua idade">
+        <input id="city"  id='placeholder-text' class="inputCity" type="text"  placeholder="Digite sua cidade">
+        <input id="code"  id='placeholder-text' class="inputCode" type="text"  placeholder="Digite seu código IVAO ou VATSIM">
+        <input id="email"  id='placeholder-text' class="inputEmail" type="email"  placeholder="Digite seu melhor e-mail">
         </div>
 
         <div class="buttonElement">
         <button>Enviar</button>
         </div>
     </form>
+    
+        <div class="backButton" onclick=history.back()>
+            <button>Voltar</button>
+        </div>
 </main>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="script-dashboard.js"></script>
 </body>
