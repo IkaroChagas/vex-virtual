@@ -23,6 +23,10 @@ header {
     border-radius: 20px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 body {
     display: flex;
@@ -33,6 +37,7 @@ body {
     background-blend-mode: darken;
     background-color: rgba(1, 1, 27, 0.70);
 }
+
 
 .inputForm {
     display: flex;
@@ -93,7 +98,8 @@ body {
     cursor: pointer;
 }
 
-@media (max-width:768px) {
+
+@media (max-width:414px) {
 
     html {
         font-size: 50%;
@@ -103,112 +109,18 @@ body {
     header {
         display: flex;
         text-align: center;
-        margin: auto;
+        position: relative;
+        margin: auto -90px;
+        margin-top: -10px;
+        flex-direction: column;
     }
 
     .logo img {
         display: flex;
-        flex-direction: column;
-        height: 170px;
-        width: 320px;
-        margin: auto;
-        margin-top: 300px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border-radius: 20px;
-    }
-
-    body {
-        display: flex;
-        overflow-x: hidden;
-        background-image: url(/images/hjet.jpg);
-        background-repeat: repeat;
-        background-size: 2300px;
-        background-position: 60% 15%;
-        font-family: 'Poppins', sans-serif;
-        background-blend-mode: darken;
-        background-color: rgba(1, 1, 27, 0.70);
-    }
-
-    .inputForm {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        margin: auto;
-        width: 400px;
-        margin-top: 20px;
-        text-align: center;
-        backdrop-filter: blur(16px) saturate(200%);
-        -webkit-backdrop-filter: blur(16px) saturate(150%);
-        background-color: rgba(1, 1, 27, 0.75);
-        border-radius: 12px;
-    }
-
-    .inputName,
-    .inputAge,
-    .inputCity,
-    .inputCode,
-    .inputEmail {
-        display: flex;
-        width: 376px;
-        backdrop-filter: blur(16px) saturate(178%);
-        -webkit-backdrop-filter: blur(16px) saturate(178%);
-        background-color: rgba(53, 53, 53, 0.65);
-        margin: 10px;
-        font-size: 13px;
-        height: 45px;
-        color: #fff;
-        border-radius: 5px;
-    }
-
-    #placeholder-text::placeholder {
-        display: flex;
-        padding: 20px;
-        font-size: 13px;
-    }
-
-    .buttonElement {
-        display: flex;
-        bottom: 400px;
-        margin: auto;
-    }
-
-    .buttonElement button {
-        display: block;
-        height: 40px;
-        width: 120px;
-        margin: -20px;
-        font-size: 20px;
-        background: rgb(40, 40, 47);
-        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
-        border-radius: 5px;
-        border: 1px solid #666;
-        color: #fff;
-        cursor: pointer;
-    }
-}
-
-
-@media (max-width:415px) {
-
-    html {
-        font-size: 50%;
-        overflow-x: hidden;
-    }
-
-    header {
-        display: flex;
-        text-align: center;
-        margin: auto;
-    }
-
-    .logo img {
-        display: flex;
-        flex-direction: column;
-        height: 130px;
+        height: 120px;
         width: 210px;
         margin: auto;
+        position: absolute;
         margin-top: 30px;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5px);
@@ -216,12 +128,18 @@ body {
         border-radius: 20px;
     }
 
-    body {
+    main {
         display: flex;
+        position: relative;
+    }
+
+    body {
+        display: block;
         overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
         background-image: url(/images/hjet.jpg);
-        background-repeat: repeat;
-        background-size: 1600px;
+        background-size: 1300px;
         background-position: 60% 15%;
         font-family: 'Poppins', sans-serif;
         background-blend-mode: darken;
@@ -231,11 +149,12 @@ body {
     .inputForm {
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        flex-wrap: nowrap;
+        position: relative;
         margin: auto;
-        width: 300px;
-        margin-top: 20px;
-        text-align: center;
+        margin-left: 30px;
+        max-width: 295px;
+        margin-top: 115px;
         backdrop-filter: blur(16px) saturate(200%);
         -webkit-backdrop-filter: blur(16px) saturate(150%);
         background-color: rgba(1, 1, 27, 0.75);
@@ -248,7 +167,9 @@ body {
     .inputCode,
     .inputEmail {
         display: flex;
-        width: 280px;
+        max-width: 270px;
+        margin: auto 22px;
+        flex-direction: column;
         backdrop-filter: blur(16px) saturate(178%);
         -webkit-backdrop-filter: blur(16px) saturate(178%);
         background-color: rgba(53, 53, 53, 0.65);
@@ -267,15 +188,17 @@ body {
 
     .buttonElement {
         display: flex;
-        bottom: 100px;
+        flex-direction: column;
+        position: relative;
         margin: auto;
+        bottom: -75px;
     }
 
     .buttonElement button {
         display: block;
         height: 40px;
         width: 90px;
-        margin: -20px;
+        position: absolute;
         font-size: 16px;
         background: rgb(40, 40, 47);
         background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
@@ -285,5 +208,3 @@ body {
         cursor: pointer;
     }
 }
-
-
