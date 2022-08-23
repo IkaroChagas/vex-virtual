@@ -5,8 +5,16 @@ sendEvent.addEventListener('click', () => {
     const input = document.querySelector('input').value.trim();
     const sendEvent = document.querySelector('button');
 
-    if(input !== ''){
-        alert('Informação enviada, comandante!')
+    if(input !== ''| input === '' ){
+        Toastify({
+            text: "Enviado, comandante!",
+            duration: 4000,
+            gravity: 'top',
+            position: 'center',
+            style: {
+                    background: '#4bab4e'
+            }
+    }).showToast()
         return sendEvent
     }
 })
