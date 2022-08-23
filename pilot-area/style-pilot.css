@@ -20,26 +20,198 @@ header {
 
 .container-briefing select {
     display: block;
-    height: 120px;
-    width: 260px;
     margin: auto;
     font-size: 22px;
+    overflow-y: hidden;
     color: gray;
-    background-color: rgba(1, 1, 27, .50);
+    background-color: rgba(29, 29, 48, 0.5);
     border-radius: 10px;
     border: none;
-    scroll-margin-right: 0;
 }
 
-.input p {
+.fbo-header h2 {
     display: flex;
-    height: 30px;
     margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.fbo-items select {
+    display: block;
+    margin: auto;
+    overflow-y: hidden;
+    font-size: 22px;
+    color: gray;
+    background-color: rgba(29, 29, 48, 0.5);
+    border-radius: 10px;
+    border: none;
 }
 
 .info {
     display: flex;
     margin: auto;
     color: red;
-    font-weight: bold;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+
+.input p {
+    display: flex;
+    margin: auto;
+    margin-top: -30px;
+    text-align: center;
+    justify-content: center;
+}
+
+input {
+    display: flex;
+    margin: auto;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sendInfo h3 {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons button {
+    display: block;
+    height: 30px;
+    width: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: rgb(40, 40, 47);
+    background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+    border-radius: 5px;
+    border: 1px solid #666;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:414px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    body {
+        display: block;
+        background-image: url('/images/fbo.jpg');
+        background-size: 1400px;
+        background-position: 50% 10%;
+        background-blend-mode: darken;
+        background-color: rgba(1, 1, 27, .90);
+        color: gray;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header h1 {
+        display: flex;
+        margin: auto;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-briefing select {
+        display: block;
+        margin: auto;
+        width: 200px;
+        margin-top: 20px;
+        font-size: 20px;
+        overflow-y: hidden;
+        color: gray;
+        background-color: rgba(29, 29, 48, 0.5);
+        border-radius: 10px;
+        border: none;
+    }
+
+    .fbo-header h2 {
+        display: flex;
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .fbo-items select {
+        display: block;
+        margin: auto;
+        width: 200px;
+        margin-top: 7px;
+        overflow-y: hidden;
+        font-size: 20px;
+        color: gray;
+        background-color: rgba(29, 29, 48, 0.5);
+        border-radius: 10px;
+        border: none;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .input p {
+        display: flex;
+        margin: auto;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    input {
+        display: flex;
+        margin: auto;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sendInfo h3 {
+        display: flex;
+        margin: auto;
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .buttons button {
+        display: block;
+        height: 30px;
+        width: 90px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
 }

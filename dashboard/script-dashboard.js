@@ -27,7 +27,7 @@ form.addEventListener('submit', e => {
 
     if(errors.length > 0) {
 
-        for(let i = 0; i < errors.length; i++){
+        for(let i = 0; i < errors.length; i++){ // loop realizado para a averiguação de condição
                 Toastify ({
                         text: errors[i],
                         duration: 4000,

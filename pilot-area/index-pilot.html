@@ -18,13 +18,16 @@
 
 <main>
     <div class="container-briefing">
-        <select name="FBO Itens" size="4" multiple="multiple">
-            <option value="belohorizonteTown">Pampulha-(SBBH)</option>
-            <option value="curitibaTown">Bacacheri-(SBBI)</option>
-            <option value="macapaTown">Macapá-(SBMQ)</option>
+        <select name="FBO Itens" size="3">
+            <option value="0">Pampulha - (SBBH)</option>
+            <option value="1">Bacacheri - (SBBI)</option>
+            <option value="2">Macapá - (SBMQ)</option>
         </select>
+    </div>
         <br>
+        <div class="fbo-header">
         <h2>FBO Briefing (Fixed Base Operator)</h2>
+        </div>
         <br>
         <div class="fbo-items">
         <select name="FBO Itens" size="4" multiple="multiple">
@@ -34,34 +37,22 @@
             <option value="ATC-service">ATC no aerodromo</option>
         </select>
         </div>
-        <br><br>
-        <div class="input">
-       <p>Outro? Especifique:</p> <input type="text">
-        </div>
-        <div class="sendInfo">
-            <h3>Clique abaixo para enviar os dados para o despacho operacional</h3>
-            <button>Enviar</button>
-        </div>
         <div class="info">
             <p>Atenção: para selecionar mais de um item segure a tecla CTRL</p>
         </div>
-
-    </div>
+        <br><br>
+        <div class="input">
+       <p>Outro? Especifique:</p> <input id="inputValue" type="text">
+        </div>
+        <div class="sendInfo">
+            <h3>Clique abaixo para enviar os dados para o despacho operacional</h3>
+        </div>
+        <div class="buttons">
+            <button id="sendInfo">Enviar</button>
+            <button onclick="history.back()">Voltar</button>
+        </div>
+    
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="script-pilot.js"></script>
 </body>
