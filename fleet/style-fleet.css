@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,34 +10,322 @@ header {
 }
 
 .logo img {
-    height: 170px;
+    display: flex;
+    margin: auto;
+    width: 250px;
+    height: 130px;
 }
 
 .container-header {
-    background-color: rgba(1, 1, 27, 0.75);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width: 100%;
-    height: 150px;
+
 }
 
 body {
-    display: flex;
+    display: block;
+    background-image: url(/images/executive.jpg);
     background-blend-mode: darken;
-    background-color: rgba(1, 1, 27, 0.80);
+    background-size: 1700px;
+    background-color: rgba(1, 1, 27, 0.95);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    color: gray;
 }
 
+.slide {
+    display: block;
+    position: relative;
+    transition: .6s;
+}
 
-.aircrafts {
+.container-slide {
     display: flex;
+    overflow: hidden;
+    width: 650px;
+    height: 350px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
 }
 
-.citation {
+.slide img {
+    display: flex;
+    width: 650px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#slide1:checked~.first {
+    margin-left: 0;
+}
+
+#slide2:checked~.first {
+    margin-left: -100%;
+}
+
+#slide3:checked~.first {
+    margin-left: -200%;
+}
+
+.input {
+    display: none;
+}
+
+body h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.aicraft-specs {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
 }
 
-.citation img {
-    width: 800px;
+.first-aircraft {
+    display: block;
     margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.first-aircraft h2 {
+    color: #ed1944
+}
+
+.first-aircraft ul {
+    line-height: 55px;
+    color: #fff;
+}
+
+.second-aircraft {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+.second-aircraft h2 {
+    color: #ed1944
+}
+
+.second-aircraft ul {
+    line-height: 55px;
+    color: #fff;
+}
+
+.third-aircraft {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+.third-aircraft h2 {
+    color: #ed1944
+}
+
+.third-aircraft ul {
+    line-height: 55px;
+    color: #fff;
+}
+
+.backButton {
+    display: flex;
+    left: 47%;
+    margin: -50px -12px;
+    position: relative;
+}
+
+.backButton button {
+    display: block;
+    height: 30px;
+    width: 90px;
+    background: rgb(40, 40, 47);
+    background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+    border-radius: 5px;
+    border: 1px solid #666;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:414px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo img {
+        display: flex;
+        margin: auto;
+        width: 200px;
+        height: 120px;
+    }
+
+    body {
+        display: block;
+        background-image: url(/images/executive.jpg);
+        background-blend-mode: darken;
+        background-size: 1600px;
+        background-color: rgba(1, 1, 27, 0.95);
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        color: gray;
+    }
+
+    .slide {
+        display: block;
+        position: relative;
+        transition: .6s;
+    }
+
+    .container-slide {
+        display: flex;
+        overflow: hidden;
+        width: 320px;
+        height: 200px;
+        margin: auto;
+        margin-top: 25px;
+        border-radius: 20px;
+    }
+
+    .slide img {
+        display: flex;
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    body h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .aicraft-specs {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .first-aircraft {
+        display: block;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 150px;
+        width: 320px;
+        border-radius: 20px;
+    }
+
+    .first-aircraft h2 {
+        font-size: 20px;
+        color: #ed1944
+    }
+
+    .first-aircraft ul {
+        font-size: 12px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .second-aircraft {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 150px;
+        width: 320px;
+        border-radius: 20px;
+    }
+
+
+    .second-aircraft h2 {
+        font-size: 20px;
+        color: #ed1944
+    }
+
+    .second-aircraft ul {
+        font-size: 12px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .third-aircraft {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 150px;
+        width: 320px;
+        border-radius: 20px;
+    }
+
+
+    .third-aircraft h2 {
+        font-size: 20px;
+        color: #ed1944
+    }
+
+    .third-aircraft ul {
+        font-size: 12px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .backButton {
+        display: flex;
+        left: 40%;
+        margin: -50px -12px;
+        position: relative;
+    }
+
+    .backButton button {
+        display: block;
+        height: 30px;
+        width: 90px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
 }

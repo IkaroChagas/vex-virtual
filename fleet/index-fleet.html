@@ -20,48 +20,66 @@
     </header>
 
     <main>
-        <div class="fleet">
-            <div class="aircrafts">
-                <div class="citation">
-                    <h1>Cessna Citation CJ4</h1>
-                    <img src="/images/cj4.jpg" alt="">
-                    <div class="description">
-                        <ul>
-                            <li>Alcance máximo: 4.010km</li>
-                            <li>Capacidade para 10 passageiros</li>
-                            <li>Teto de serviço: 45.000 pés </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tbm">
-                    <h1>Daher TBM 940</h1>
-                    <img src="/images/tbm940_2.jpg" alt="">
-                    <div class="description">
-                        <ul>
-                            <li>Alcance máximo: 2.000km</li>
-                            <li>Capacidade para 6 passageiros</li>
-                            <li>Teto de serviço: 35.000 pés </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hondajet">
-                    <h1>HondaJet HA-420</h1>
-                    <img src="/images/hondajet.jpg" alt="">
-                    <div class="description">
-                        <ul>
-                            <li>Alcance máximo: 2.661km</li>
-                            <li>Capacidade para 5 passageiros</li>
-                            <li>Teto de serviço: 43.000 pés </li>
-                        </ul>
-                    </div>
-                </div>
+    <section>
+        <div class="slide">
+            <div class="container-slide">
+
+                <input class="input" type="radio" name="slide" id="slide1" checked>
+                <input class="input" type="radio" name="slide" id="slide2">
+                <input class="input" type="radio" name="slide" id="slide3">
+
+            <div class="slide first">
+                
+                <img src="/images/cj4.jpg">
+                <p>Cessna</p>
+            </div>
+            <div class="slide">
+                <img src="/images/tbm940_2.jpg">
+            </div>
+            <div class="slide">
+                <img src="/images/hondajet.jpg">
             </div>
         </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <h1>Especificações das aeronaves:</h1>
+    <br>
+    
+    <div class="aicraft-specs">
+    <div class="first-aircraft">
+    <h2>Cessna Citation CJ4</h2>
+        <ul style="list-style: none">
+            <li>Alcance máximo: 4010km</li>
+            <li>Capacidade para 10 passageiros</li>
+            <li>Teto de serviço: 45.000 pés</li>
+        </ul>
+    </div>
 
-
+    <div class="second-aircraft">
+        <h2>Daher TBM 940</h2>
+        <ul style="list-style: none">
+            <li>Alcance máximo: 2.000km</li>
+            <li>Capacidade para 6 passageiros</li>
+            <li>Teto de serviço: 35.000 pés</li>
+        </ul>
+    </div>
+    
+    <div class="third-aircraft">
+        <h2>HondaJet HA-420</h2>
+        <ul style="list-style: none">
+            <li>Alcance máximo: 2.661km</li>
+            <li>Capacidade para 5 passageiros</li>
+            <li>Teto de serviço: 43.000 pés</li>
+        </ul>
+    </div>
+    </div>
     </main>
+
+    <div class="backButton" onclick=history.back()>
+        <button>Voltar</button>
+    </div>
         
-
-
 <script src="script-fleet.js"></script>
 </body>
