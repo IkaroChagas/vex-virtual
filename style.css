@@ -306,7 +306,7 @@ footer {
 
     .nav-area {
         width: 450px;
-        height: 450px;
+        height: 380px;
         color: gray;
         text-align: center;
         margin: auto;
@@ -542,7 +542,7 @@ footer {
 
     .nav-area {
         width: 300px;
-        height: 300px;
+        height: 250px;
         color: gray;
         text-align: center;
         margin: auto;
@@ -591,9 +591,10 @@ footer {
     }
 
     .box-1 h2 {
+        display: block;
         font-size: 16px;
         text-align: center;
-        margin-top: -10px;
+        margin-top: -25px;
     }
 
     .box-1 p {
@@ -611,6 +612,7 @@ footer {
     }
 
     .box-2 h2 {
+        display: block;
         font-size: 16px;
         margin-top: 20px;
     }
@@ -678,7 +680,7 @@ footer {
     }
 
     .box-3 {
-        display: flex;
+        display: block;
         flex-wrap: wrap;
         background: rgba(41, 41, 41, 0.8);
         backdrop-filter: blur(5px);
@@ -692,30 +694,36 @@ footer {
         font-size: 15px;
         flex-wrap: wrap;
         margin: auto;
-        margin-right: -55px;
+        margin-right: -35px;
+    }
+
+    .social-media-logos {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
     }
 
     .social-media-logos img {
-        flex: 1;
+        display: block;
         height: 50px;
         width: 50px;
-        margin: auto;
-        margin-left: 17px;
-        justify-content: space-between;
+        margin: -30px;
+        margin-top: -5px;
     }
 
     .manufacturers-img {
         display: flex;
-        flex-wrap: nowrap;
         margin: auto;
+        margin-top: 45px;
     }
 
     .manufacturers-img img {
-        width: 150px;
+        display: block;
+        width: 160px;
         height: 50px;
         margin: auto;
-        margin-left: 60px;
-        margin-top: -9px;
+        margin-left: 70px;
+        margin-top: -17px;
     }
 
     .text-area h2 {
