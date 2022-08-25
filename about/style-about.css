@@ -276,6 +276,7 @@ footer {
         display: block;
         height: 30px;
         width: 90px;
+        font-size: 14px;
         background: rgb(40, 40, 47);
         background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
         border-radius: 5px;

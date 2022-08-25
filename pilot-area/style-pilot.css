@@ -321,6 +321,7 @@ input {
         display: block;
         height: 30px;
         width: 90px;
+        font-size: 14px;
         margin-left: 30px;
         margin-right: 30px;
         background: rgb(40, 40, 47);
