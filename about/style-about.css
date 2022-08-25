@@ -91,6 +91,121 @@ footer {
     margin-top: 50px;
 }
 
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    body {
+        display: block;
+        background-image: url(/images/executive2.png);
+        background-blend-mode: darken;
+        background-size: 1600px;
+        background-position: 30%;
+        background-color: rgba(1, 1, 27, 0.95);
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        color: gray;
+    }
+
+    .about {
+        display: flex;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 20px;
+        height: 500px;
+        width: 600px;
+        margin: auto;
+        padding: 12px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .about p {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .values {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        padding: 15px;
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+
+    hr {
+        display: block;
+        color: #666;
+    }
+
+    .backButton {
+        display: flex;
+        left: 46%;
+        margin: -20px -20px;
+        position: relative;
+    }
+
+    .backButton button {
+        display: block;
+        height: 40px;
+        width: 110px;
+        font-size: 20px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .container-footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        margin-top: 66px;
+    }
+
+    .container-footer h3 {
+        display: block;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 65px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .container-footer img {
+        display: block;
+        height: 160px;
+        width: 235px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width:414px) {
 
     html {

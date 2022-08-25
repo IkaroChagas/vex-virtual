@@ -115,6 +115,129 @@ body {
 }
 
 
+@media (max-width:768px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        text-align: center;
+        position: relative;
+        margin: auto -150px;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .logo img {
+        display: flex;
+        height: 180px;
+        width: 350px;
+        margin: auto;
+        position: absolute;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+
+    body {
+        display: block;
+        overflow-x: hidden;
+        background-image: url(/images/hjet.jpg);
+        background-size: 1850px;
+        background-position: 60% 15%;
+        font-family: 'Poppins', sans-serif;
+        background-blend-mode: darken;
+        background-color: rgba(1, 1, 27, 0.70);
+    }
+
+    .inputForm {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -50%;
+        left: 50%;
+        max-width: 350px;
+        margin-top: 450px;
+        backdrop-filter: blur(16px) saturate(200%);
+        -webkit-backdrop-filter: blur(16px) saturate(150%);
+        background-color: rgba(1, 1, 27, 0.75);
+        border-radius: 12px;
+    }
+
+    .inputName,
+    .inputAge,
+    .inputCity,
+    .inputCode,
+    .inputEmail {
+        display: block;
+        flex-direction: column;
+        backdrop-filter: blur(16px) saturate(178%);
+        -webkit-backdrop-filter: blur(16px) saturate(178%);
+        background-color: rgba(53, 53, 53, 0.65);
+        margin: 20px 25px;
+        font-size: 18px;
+        height: 45px;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    #placeholder-text::placeholder {
+        display: flex;
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .buttonElement {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto -20px;
+        bottom: 150px;
+    }
+
+    .buttonElement button {
+        display: block;
+        height: 60px;
+        width: 110px;
+        position: absolute;
+        font-size: 20px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+    .backButton {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto -20px;
+        bottom: 60px;
+    }
+
+    .backButton button {
+        display: block;
+        height: 60px;
+        width: 110px;
+        position: absolute;
+        font-size: 20px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
 @media (max-width:415px) {
 
     html {

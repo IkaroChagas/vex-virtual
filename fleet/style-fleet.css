@@ -172,6 +172,172 @@ body h1 {
     cursor: pointer;
 }
 
+@media (max-width:768px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo img {
+        display: flex;
+        margin: auto;
+        width: 350px;
+        height: 175px;
+    }
+
+    body {
+        display: block;
+        background-image: url(/images/executive.jpg);
+        background-blend-mode: darken;
+        background-size: 1400px;
+        background-color: rgba(1, 1, 27, 0.95);
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        color: gray;
+    }
+
+    .slide {
+        display: block;
+        position: relative;
+        transition: .6s;
+    }
+
+    .container-slide {
+        display: flex;
+        overflow: hidden;
+        width: 550px;
+        height: 300px;
+        margin: auto;
+        margin-top: 25px;
+        border-radius: 20px;
+    }
+
+    .slide img {
+        display: flex;
+        width: 550px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    body h1 {
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .aicraft-specs {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .first-aircraft {
+        display: block;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 160px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    .first-aircraft h2 {
+        font-size: 25px;
+        color: #777;
+    }
+
+    .first-aircraft ul {
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .second-aircraft {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 160px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+
+    .second-aircraft h2 {
+        font-size: 25px;
+        color: #777;
+    }
+
+    .second-aircraft ul {
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .third-aircraft {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 160px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+
+    .third-aircraft h2 {
+        font-size: 25px;
+        color: #777;
+    }
+
+    .third-aircraft ul {
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .backButton {
+        display: flex;
+        left: 45%;
+        margin: -50px -12px;
+        position: relative;
+    }
+
+    .backButton button {
+        display: block;
+        height: 40px;
+        width: 110px;
+        font-size: 20px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
 @media (max-width:414px) {
 
     html {

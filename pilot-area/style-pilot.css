@@ -102,6 +102,122 @@ input {
     cursor: pointer;
 }
 
+@media (max-width:768px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    body {
+        display: block;
+        background-image: url('/images/fbo.jpg');
+        background-size: 2100px;
+        background-position: 40% 10%;
+        background-blend-mode: darken;
+        background-color: rgba(1, 1, 27, .90);
+        color: gray;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header h1 {
+        display: flex;
+        margin: auto;
+        font-size: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-briefing select {
+        display: block;
+        margin: auto;
+        width: 300px;
+        margin-top: 80px;
+        font-size: 25px;
+        overflow-y: hidden;
+        color: gray;
+        background-color: rgba(29, 29, 48, 0.5);
+        border-radius: 10px;
+        border: none;
+    }
+
+    .fbo-header h2 {
+        display: flex;
+        margin: auto;
+        font-size: 50px;
+        margin-top: 60px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .fbo-items select {
+        display: block;
+        margin: auto;
+        width: 300px;
+        margin-top: 25px;
+        overflow-y: hidden;
+        font-size: 25px;
+        color: gray;
+        background-color: rgba(29, 29, 48, 0.5);
+        border-radius: 10px;
+        border: none;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .input p {
+        display: flex;
+        margin: auto;
+        font-size: 25px;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    input {
+        display: flex;
+        margin: auto;
+        height: 30px;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sendInfo h3 {
+        display: flex;
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        margin: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .buttons button {
+        display: block;
+        height: 60px;
+        width: 140px;
+        font-size: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
 @media (max-width:414px) {
 
     html {
