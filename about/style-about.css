@@ -186,6 +186,8 @@ footer {
     .container-footer h3 {
         display: block;
         text-align: center;
+        margin-left: 5px;
+        margin-top: 60px;
         margin-bottom: 30px;
         font-size: 13px;
     }
@@ -195,7 +197,8 @@ footer {
         height: 100px;
         width: 195px;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
 
