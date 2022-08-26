@@ -420,7 +420,7 @@ body {
 
     .staff-1 img {
         display: block;
-        margin-left: 45px;
+        margin-left: 46px;
         width: 240px;
         height: 250px;
         object-fit: cover;
@@ -431,7 +431,7 @@ body {
         display: block;
         margin-top: 30px;
         font-size: 25px;
-        margin: auto;
+        margin-left: 46px;
         justify-content: center;
         text-align: center;
         margin-top: 20px;
@@ -444,7 +444,7 @@ body {
         margin: auto;
         justify-content: center;
         text-align: center;
-        margin-top: 20px;
+        margin-left: 46px;
     }
 
     .staff-2 {
@@ -454,7 +454,7 @@ body {
 
     .staff-2 img {
         display: block;
-        margin-left: 45px;
+        margin-left: 46px;
         width: 240px;
         height: 250px;
         object-fit: cover;
@@ -465,7 +465,7 @@ body {
         display: block;
         margin-top: 30px;
         font-size: 25px;
-        margin: auto;
+        margin-left: 46px;
         justify-content: center;
         text-align: center;
         margin-top: 20px;
@@ -478,7 +478,7 @@ body {
         margin: auto;
         justify-content: center;
         text-align: center;
-        margin-top: 20px;
+        margin-left: 46px;
     }
 
     .staff-3 {
@@ -488,7 +488,7 @@ body {
 
     .staff-3 img {
         display: block;
-        margin-left: 45px;
+        margin-left: 46px;
         width: 240px;
         height: 250px;
         object-fit: cover;
@@ -499,7 +499,7 @@ body {
         display: block;
         margin-top: 30px;
         font-size: 25px;
-        margin: auto;
+        margin-left: 46px;
         justify-content: center;
         text-align: center;
         margin-top: 20px;
@@ -512,48 +512,47 @@ body {
         margin: auto;
         justify-content: center;
         text-align: center;
-        margin-top: 20px;
+        margin-left: 22px;
     }
 
 
-    .staff-4 {
+    .staff-1 {
         display: block;
         margin-left: 20px;
-        margin-bottom: 100px;
     }
 
-    .staff-4 img {
+    .staff-1 img {
         display: block;
-        margin-left: 45px;
+        margin-left: 46px;
         width: 240px;
         height: 250px;
         object-fit: cover;
         border-radius: 50%;
     }
 
-    .staff-4 h3 {
+    .staff-1 h3 {
         display: block;
         margin-top: 30px;
         font-size: 25px;
-        margin: auto;
+        margin-left: 46px;
         justify-content: center;
         text-align: center;
         margin-top: 20px;
     }
 
-    .staff-4 p {
+    .staff-1 p {
         display: block;
         margin-top: 30px;
         font-size: 20px;
         margin: auto;
         justify-content: center;
         text-align: center;
-        margin-top: 20px;
+        margin-left: 46px;
     }
 
     .backButton {
         display: flex;
-        left: 40%;
+        left: 42%;
         margin: -60px -12px;
         position: relative;
     }
