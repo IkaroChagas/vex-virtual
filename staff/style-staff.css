@@ -47,6 +47,7 @@ body {
     display: block;
     width: 240px;
     height: 250px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -77,6 +78,7 @@ body {
     display: block;
     width: 240px;
     height: 250px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -107,6 +109,7 @@ body {
     display: block;
     width: 240px;
     height: 250px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -137,6 +140,7 @@ body {
     display: block;
     width: 240px;
     height: 250px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -162,14 +166,13 @@ body {
     display: none;
 }
 
+@media (max-width:768px) {
 
-@media (max-width:414px) {
-    
     html {
         font-size: 50%;
         overflow-x: hidden;
     }
-    
+
     header {
         display: flex;
         background: rgba(255, 255, 255, 0.1);
@@ -177,7 +180,7 @@ body {
         -webkit-backdrop-filter: blur(5px);
         height: 150px;
     }
-    
+
     header h1 {
         display: block;
         margin: auto;
@@ -185,8 +188,211 @@ body {
         justify-content: center;
         font-size: 30px;
     }
-    
-    
+
+
+    body {
+        display: block;
+        background-image: url(/images/VEX2020.png);
+        background-color: rgba(1, 1, 27, 0.95);
+        background-blend-mode: darken;
+        background-size: 900px;
+        background-position: 50%;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        color: gray;
+    }
+
+    .staff-field {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .staff-1 {
+        display: block;
+        margin: auto;
+    }
+
+    .staff-1 img {
+        display: block;
+        width: 260px;
+        height: 270px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .staff-1 h3 {
+        display: block;
+        margin-top: 30px;
+        font-size: 25px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .staff-1 p {
+        display: block;
+        margin-top: 30px;
+        font-size: 20px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .staff-2 {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .staff-2 img {
+        display: block;
+        width: 260px;
+        height: 270px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .staff-2 h3 {
+        display: block;
+        margin-top: 30px;
+        font-size: 25px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .staff-2 p {
+        display: block;
+        margin-top: 30px;
+        font-size: 20px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .staff-3 {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .staff-3 img {
+        display: block;
+        width: 260px;
+        height: 270px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .staff-3 h3 {
+        display: block;
+        margin-top: 30px;
+        font-size: 25px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .staff-3 p {
+        display: block;
+        margin-top: 30px;
+        font-size: 20px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .staff-4 {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .staff-4 img {
+        display: block;
+        width: 260px;
+        height: 270px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .staff-4 h3 {
+        display: block;
+        margin-top: 30px;
+        font-size: 25px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .staff-4 p {
+        display: block;
+        margin-top: 30px;
+        font-size: 20px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 110px;
+    }
+
+    .backButton {
+        display: flex;
+        left: 45%;
+        margin: -80px -12px;
+        position: relative;
+    }
+
+    .backButton button {
+        display: block;
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        background: rgb(40, 40, 47);
+        background: linear-gradient(180deg, rgba(40, 40, 47, 1) 0%, rgba(85, 85, 85, 0.75) 49%);
+        border-radius: 5px;
+        border: 1px solid #666;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:414px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 150px;
+    }
+
+    header h1 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+
     body {
         display: block;
         background-image: url(/images/VEX2020.png);
@@ -198,7 +404,7 @@ body {
         overflow-x: hidden;
         color: gray;
     }
-    
+
     .staff-field {
         display: flex;
         flex-direction: column;
@@ -206,20 +412,21 @@ body {
         justify-content: space-between;
         margin-top: 50px;
     }
-    
+
     .staff-1 {
         display: block;
         margin-left: 20px;
     }
-    
+
     .staff-1 img {
         display: block;
         margin-left: 45px;
         width: 240px;
         height: 250px;
+        object-fit: cover;
         border-radius: 50%;
     }
-    
+
     .staff-1 h3 {
         display: block;
         margin-top: 30px;
@@ -229,7 +436,7 @@ body {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .staff-1 p {
         display: block;
         margin-top: 30px;
@@ -239,20 +446,21 @@ body {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .staff-2 {
         display: block;
         margin-left: 20px;
     }
-    
+
     .staff-2 img {
         display: block;
         margin-left: 45px;
         width: 240px;
         height: 250px;
+        object-fit: cover;
         border-radius: 50%;
     }
-    
+
     .staff-2 h3 {
         display: block;
         margin-top: 30px;
@@ -262,7 +470,7 @@ body {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .staff-2 p {
         display: block;
         margin-top: 30px;
@@ -272,20 +480,21 @@ body {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .staff-3 {
         display: block;
         margin-left: 20px;
     }
-    
+
     .staff-3 img {
         display: block;
         margin-left: 45px;
         width: 240px;
         height: 250px;
+        object-fit: cover;
         border-radius: 50%;
     }
-    
+
     .staff-3 h3 {
         display: block;
         margin-top: 30px;
@@ -295,7 +504,7 @@ body {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .staff-3 p {
         display: block;
         margin-top: 30px;
@@ -312,15 +521,16 @@ body {
         margin-left: 20px;
         margin-bottom: 100px;
     }
-    
+
     .staff-4 img {
         display: block;
         margin-left: 45px;
         width: 240px;
         height: 250px;
+        object-fit: cover;
         border-radius: 50%;
     }
-    
+
     .staff-4 h3 {
         display: block;
         margin-top: 30px;
@@ -330,7 +540,7 @@ body {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .staff-4 p {
         display: block;
         margin-top: 30px;
