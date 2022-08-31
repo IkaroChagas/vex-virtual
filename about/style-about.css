@@ -109,8 +109,8 @@ footer {
         display: block;
         background-image: url(/images/executive2.png);
         background-blend-mode: darken;
-        background-size: 1600px;
-        background-position: 30%;
+        background-size: 2000px;
+        background-position: 40%;
         background-color: rgba(1, 1, 27, 0.95);
         font-family: 'Poppins', sans-serif;
         overflow-x: hidden;
@@ -146,11 +146,13 @@ footer {
         font-size: 20px;
         line-height: 40px;
         margin-bottom: 50px;
+        margin-top: 30px;
     }
 
     hr {
         display: block;
         color: #666;
+        margin-top: 10px;
     }
 
     .backButton {
@@ -184,7 +186,7 @@ footer {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        margin-top: 66px;
+        margin-top: 260px;
     }
 
     .container-footer h3 {
@@ -198,9 +200,10 @@ footer {
 
     .container-footer img {
         display: block;
-        height: 160px;
+        height: 140px;
         width: 235px;
         margin: auto;
+        object-fit: contain;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -303,16 +306,17 @@ footer {
         display: block;
         text-align: center;
         margin-left: 5px;
-        margin-top: 60px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
         font-size: 13px;
     }
 
     .container-footer img {
         display: block;
-        height: 100px;
+        height: 75px;
         width: 195px;
         margin: auto;
+        object-fit: contain;
         margin-top: 30px;
         margin-bottom: 30px;
     }

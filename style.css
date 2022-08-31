@@ -10,7 +10,7 @@ body {
     background-image: url(/images/tbm940.jpg);
     background-size: cover;
     background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.65);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 
@@ -270,7 +270,7 @@ footer {
         background-size: 820px;
         background-image: url(/images/tbm940.jpg);
         background-blend-mode: darken;
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.65);
     }
 
     header {
@@ -506,7 +506,7 @@ footer {
         background-size: 500px;
         background-image: url(/images/tbm940.jpg);
         background-blend-mode: darken;
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.65);
     }
 
     header {
